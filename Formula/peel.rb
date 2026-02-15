@@ -1,10 +1,10 @@
 class Peel < Formula
   desc "Docker-compatible CLI for Apple Containers"
   homepage "https://github.com/TOMFoolery-Labs/peel-cli"
-  url "https://github.com/TOMFoolery-Labs/peel-cli/releases/download/v0.2.0/peel"
-  sha256 "b95c3b0c090bdb80befd084e509ef3cf184013d9a4a06a78ddaf2e61c14bbd55"
+  url "https://github.com/TOMFoolery-Labs/peel-cli/releases/download/v0.2.1/peel"
+  sha256 "87aff5ac8212688e4a55a9ed1b8ad8a3a03f4064575251e34b1f336c2c7b7d86"
   license "MIT"
-  version "0.2.0"
+  version "0.2.1"
 
   depends_on :macos
   depends_on arch: :arm64
@@ -14,6 +14,6 @@ class Peel < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/peel --version")
+    assert_match "0.2.1", shell_output("#{bin}/peel --version")
   end
 end
